@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Eco Hub System</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
-    
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -31,6 +29,60 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .vision-mission-container {
+            display: flex;
+            align-items: center; /* vertically center the items */
+            justify-content: center; /* center horizontally if needed */
+            margin-top: 40px;
+            margin-bottom: 40px;
+            gap: 60px; /* adds consistent horizontal spacing between children */
+        }
+
+        .vision-mission-box {
+            padding: 20px;
+            max-width: 400px; /* optional: limit box width for better layout */
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            font-size: 32px;
+        }
+
+        .mission-icon {
+            color: #d6336c; /* pink/red */
+            border-color: #d6336c;
+        }
+
+        .vision-icon {
+            color: #22c55e; /* green */
+            border-color: #22c55e;
+        }
+
+        .text-mission {
+            color: #d6336c;
+        }
+
+        .text-vision {
+            color: #22c55e;
+        }
+
+        .divider {
+            width: 2px;
+            height: 100px;
+            background-color: #14dc6e;
+            margin: 0 auto;
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -40,31 +92,29 @@
     </div>
     <!-- Spinner End -->
 
-    
     <!-- Navbar Start -->
     <div class="container-fluid bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-                    <a href="index.html" class="navbar-brand" >
-                        <img class="img-fluid" src="./img/logo.jpg" alt="Logo" style="height: 75px;">
-
-                    </a>
-                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <a href="index.html" class="navbar-brand">
+                    <img class="img-fluid" src="./img/logo.jpg" alt="Logo" style="height: 75px;">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link active">About</a>
-                          <a href="Service.html" class="nav-item nav-link">Service</a>
+                        <a href="Service.html" class="nav-item nav-link">Service</a>
                         <a href="store.html" class="nav-item nav-link">Store</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light rounded-0 m-0">
                                 <a href="feature.html" class="dropdown-item">Features</a>
                                 <a href="blog.html" class="dropdown-item">Blog Article</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                
+                              
+                                <a href="./teammember.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100">Our Member</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -77,7 +127,6 @@
         </div>
     </div>
     <!-- Navbar End -->
-
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -94,21 +143,21 @@
     </div>
     <!-- Page Header End -->
 
-
     <!-- About Start -->
-    <div class="container-xxl py-5">
+     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <!-- Left Image Grid -->
                 <div class="col-lg-6">
                     <div class="row g-3">
                         <div class="col-6 text-end">
-                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/w3.jpg" alt="Community Cleanup">
-                            <img class="img-fluid bg-white w-50 wow fadeIn" data-wow-delay="0.2s" src="img/smart-bin.jpg" alt="Smart Waste Bin">
+                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/wm.webp" alt="Community Cleanup">
+                              <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img//ed.jpeg" alt="Eco Education">
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/eco-education.jpg" alt="Eco Education">
-                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/recycling-hub.jpg" alt="Recycling Hub">
+                            <img class="img-fluid bg-white w-400 wow fadeIn" data-wow-delay="0.2s" src="img/binnnnn.jpg" alt="Smart Waste Bin">
+                          
+                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/rh.jfif" alt="Recycling Hub">
                         </div>
                     </div>
                 </div>
@@ -144,8 +193,33 @@
             </div>
         </div>
     </div>
+    
     <!-- About End -->
-
+    <div class="row text-center vision-mission-container " >
+        <div class="col-md-5 vision-mission-box" >
+            <div class="icon-circle mission-icon mb-3" >
+                <i class="fas fa-flag"></i>
+            </div>
+            <h5 class="text-mission fw-bold">OUR MISSION</h5>
+            <p>
+                To empower individuals and communities through innovative waste management solutions, education, and technology—transforming waste into value for people and the planet.
+            </p>
+        </div>
+    
+        <div class="col-md-2 d-flex align-items-center justify-content-center">
+            <div class="divider"></div>
+        </div>
+    
+        <div class="col-md-5 vision-mission-box">
+            <div class="icon-circle vision-icon mb-3">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <h5 class="text-vision fw-bold">OUR VISION</h5>
+            <p>
+                To create a waste-free future where communities actively participate in a circular economy and sustainable urban living.
+            </p>
+        </div>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -154,7 +228,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary mb-4">Our Office</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i> Yangon , Myanmar</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+95 </p>
+                 
                     <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>EcoNomist@gmail.com</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -188,12 +262,10 @@
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Join</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
@@ -202,16 +274,13 @@
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="fw-medium" href="#">Eco-Nomists</a>, All Right Reserved.
                 </div>
-               
             </div>
         </div>
     </div>
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
